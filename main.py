@@ -17,6 +17,7 @@ current_time = CurrentTime()
 satelliteName = input("\nEnter the name of the CUBESAT (e.g. CUTE-1 (CO-55)): ")
 satellite = tracker.fetch_telemetry_data(satelliteName)
 
+print(f"\n\n\t\t Satellite: {satelliteName} \t\t\n\n")
 # Get current local time
 local_time = tracker.get_local_time().strftime('%d %b %Y %I:%M:%S %p UTC')
 print(f"\nLocal Time:  \n\n \t{local_time}\n")
